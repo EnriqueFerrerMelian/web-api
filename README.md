@@ -3,26 +3,34 @@
 ![intelogo](https://github.com/user-attachments/assets/15dc6082-4b0f-451c-8b07-ae9f34481895)
 
 ## 📝 Description
-This is a small app that will manage run records using springboot on Intellij. This is based on a tutorial made by Dan Vega (https://github.com/danvega).
+This is a small application that manages race records using Spring Boot in IntelliJ IDEA. The project is based on a tutorial made by
+[Dan Vega](https://github.com/danvega).
 
 ## 🌟 What we've done!
-  * The app will obtain some data from a JSON file, that will be loaded on a in-memory database using h2 database dependency.
-  * This data is not permanent, bu it's configured to load everytime we start the app.
-  * We can access the database from the browser on http://localhost:8080/h2-console.
-  * For the test i'm using Postman.
+  * The application loads data from a JSON file and stores it in an in-memory database using the H2 dependency.
+  * The data is not permanent, but is set to load every time we start the application.
+  * You can access the database from the browser at http://localhost:8080/h2-console.
+  * For testing, I use Postman.
 
 ## 🛠 Prerequisites
-    *Java Fundamentals (Beginner - Intermediate)
-    *JDK 17+
-    *Java Build Tools (Maven / Gradle)
-    *IDE / Text Editor
-        IntelliJ IDEA
-    *API Testing Tool
-        Postman
+Make sure you have the following items installed before you begin:
+1. Java Fundamentals (Beginner - Intermediate)
+2. JDK 17+
+3. Java Build Tools (Maven/Gradle)
+4. IDE / Text Editor: IntelliJ IDEA
+5. API Testing Tool: Postman
+
+## Instalation
+1. Clone this repository to your local machine: git clone https://github.com/EnriqueFerrerMelian/YourRepoName.git
+2. Open the project in IntelliJ IDEA.
+3. Make sure you have JDK 17+ installed and configured in your IDE.
+4. Run the application using the Maven or Gradle command depending on the build system you use:
+   ./mvnw spring-boot:run
+   ./gradlew bootRun
+5. Accede a la base de datos en memoria desde http://localhost:8080/h2-console.
 
 ## 🐛 Problems
-I did had some problem when i try to include a database on the process. I try to use Postgres, but somehow Intellij wasn't able to access it. The configuration is not
-included in this repository.
+I've had some problems trying to include a database in the process. I tried using PostgreSQL, but IntelliJ IDEA couldn't access it. Configuration for PostgreSQL is not included in this repository.
 
 ## 📄 License
 This project is licensed under the MIT License. For details, see the LICENSE.md file. (TBH, I don't think there is any license here).
